@@ -1,0 +1,3 @@
+/home/konrad/Desktop/fortran/CMakeFiles/rebuild_cache.dir
+/home/konrad/Desktop/fortran/CMakeFiles/task.dir
+/home/konrad/Desktop/fortran/CMakeFiles/edit_cache.dir
