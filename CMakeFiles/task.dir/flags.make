@@ -6,5 +6,5 @@ Fortran_FLAGS = -O3 -DNDEBUG -O3
 
 Fortran_DEFINES = 
 
-Fortran_INCLUDES = 
+Fortran_INCLUDES = -I/home/konrad/Desktop/fortran/src 
 

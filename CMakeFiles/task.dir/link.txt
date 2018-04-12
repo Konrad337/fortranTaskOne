@@ -1,1 +1,1 @@
-/usr/bin/gfortran   -O3 -DNDEBUG -O3 CMakeFiles/task.dir/src/gauss.f90.o CMakeFiles/task.dir/src/main.f90.o CMakeFiles/task.dir/src/tests.f90.o  -o bin/task 
+/usr/bin/gfortran   -O3 -DNDEBUG -O3 CMakeFiles/task.dir/src/gauss.f90.o CMakeFiles/task.dir/src/task.f90.o CMakeFiles/task.dir/src/tests.f90.o  -o bin/task 

@@ -8,11 +8,16 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_TEST_DIR ${CMAKE_SOURCE_DIR}/tests)
 
+include_directories("${PROJECT_SOURCE_DIR}/src")
+
+
 if(NOT CMAKE_BUILD_TYPE)
   message(STATUS "No build type selected, default to Release")
   set(CMAKE_BUILD_TYPE "Release")
 #  set(CMAKE_BUILD_TYPE "Debug")
 endif()
+
+
 
 
 # FFLAGS depend on the compiler
@@ -33,8 +38,5 @@ elseif(CMAKE_Fortran_COMPILER_ID MATCHES "Intel")
 endif()
 
 
-
 #normal
 add_executable(task ${SOURCES})
-
-set_property(TARGET task PROPERTY C_STANDARD 99)

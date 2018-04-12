@@ -150,32 +150,32 @@ src/gauss.f90.s:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.s
 .PHONY : src/gauss.f90.s
 
-src/main.o: src/main.f90.o
+src/task.o: src/task.f90.o
 
-.PHONY : src/main.o
+.PHONY : src/task.o
 
 # target to build an object file
-src/main.f90.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/main.f90.o
-.PHONY : src/main.f90.o
+src/task.f90.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.o
+.PHONY : src/task.f90.o
 
-src/main.i: src/main.f90.i
+src/task.i: src/task.f90.i
 
-.PHONY : src/main.i
+.PHONY : src/task.i
 
 # target to preprocess a source file
-src/main.f90.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/main.f90.i
-.PHONY : src/main.f90.i
+src/task.f90.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.i
+.PHONY : src/task.f90.i
 
-src/main.s: src/main.f90.s
+src/task.s: src/task.f90.s
 
-.PHONY : src/main.s
+.PHONY : src/task.s
 
 # target to generate assembly for a file
-src/main.f90.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/main.f90.s
-.PHONY : src/main.f90.s
+src/task.f90.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.s
+.PHONY : src/task.f90.s
 
 src/tests.o: src/tests.f90.o
 
@@ -216,9 +216,9 @@ help:
 	@echo "... src/gauss.o"
 	@echo "... src/gauss.i"
 	@echo "... src/gauss.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/task.o"
+	@echo "... src/task.i"
+	@echo "... src/task.s"
 	@echo "... src/tests.o"
 	@echo "... src/tests.i"
 	@echo "... src/tests.s"

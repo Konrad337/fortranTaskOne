@@ -81,28 +81,28 @@ CMakeFiles/task.dir/src/gauss.f90.o.provides: CMakeFiles/task.dir/src/gauss.f90.
 CMakeFiles/task.dir/src/gauss.f90.o.provides.build: CMakeFiles/task.dir/src/gauss.f90.o
 
 
-CMakeFiles/task.dir/src/main.f90.o: CMakeFiles/task.dir/flags.make
-CMakeFiles/task.dir/src/main.f90.o: src/main.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/task.dir/src/main.f90.o"
-	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/main.f90 -o CMakeFiles/task.dir/src/main.f90.o
+CMakeFiles/task.dir/src/task.f90.o: CMakeFiles/task.dir/flags.make
+CMakeFiles/task.dir/src/task.f90.o: src/task.f90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/task.dir/src/task.f90.o"
+	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/task.f90 -o CMakeFiles/task.dir/src/task.f90.o
 
-CMakeFiles/task.dir/src/main.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/main.f90.i"
-	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/main.f90 > CMakeFiles/task.dir/src/main.f90.i
+CMakeFiles/task.dir/src/task.f90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/task.f90.i"
+	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/task.f90 > CMakeFiles/task.dir/src/task.f90.i
 
-CMakeFiles/task.dir/src/main.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/main.f90.s"
-	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/main.f90 -o CMakeFiles/task.dir/src/main.f90.s
+CMakeFiles/task.dir/src/task.f90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/task.f90.s"
+	/usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/task.f90 -o CMakeFiles/task.dir/src/task.f90.s
 
-CMakeFiles/task.dir/src/main.f90.o.requires:
+CMakeFiles/task.dir/src/task.f90.o.requires:
 
-.PHONY : CMakeFiles/task.dir/src/main.f90.o.requires
+.PHONY : CMakeFiles/task.dir/src/task.f90.o.requires
 
-CMakeFiles/task.dir/src/main.f90.o.provides: CMakeFiles/task.dir/src/main.f90.o.requires
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/main.f90.o.provides.build
-.PHONY : CMakeFiles/task.dir/src/main.f90.o.provides
+CMakeFiles/task.dir/src/task.f90.o.provides: CMakeFiles/task.dir/src/task.f90.o.requires
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.o.provides.build
+.PHONY : CMakeFiles/task.dir/src/task.f90.o.provides
 
-CMakeFiles/task.dir/src/main.f90.o.provides.build: CMakeFiles/task.dir/src/main.f90.o
+CMakeFiles/task.dir/src/task.f90.o.provides.build: CMakeFiles/task.dir/src/task.f90.o
 
 
 CMakeFiles/task.dir/src/tests.f90.o: CMakeFiles/task.dir/flags.make
@@ -132,14 +132,14 @@ CMakeFiles/task.dir/src/tests.f90.o.provides.build: CMakeFiles/task.dir/src/test
 # Object files for target task
 task_OBJECTS = \
 "CMakeFiles/task.dir/src/gauss.f90.o" \
-"CMakeFiles/task.dir/src/main.f90.o" \
+"CMakeFiles/task.dir/src/task.f90.o" \
 "CMakeFiles/task.dir/src/tests.f90.o"
 
 # External object files for target task
 task_EXTERNAL_OBJECTS =
 
 bin/task: CMakeFiles/task.dir/src/gauss.f90.o
-bin/task: CMakeFiles/task.dir/src/main.f90.o
+bin/task: CMakeFiles/task.dir/src/task.f90.o
 bin/task: CMakeFiles/task.dir/src/tests.f90.o
 bin/task: CMakeFiles/task.dir/build.make
 bin/task: CMakeFiles/task.dir/link.txt
@@ -152,7 +152,7 @@ CMakeFiles/task.dir/build: bin/task
 .PHONY : CMakeFiles/task.dir/build
 
 CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/gauss.f90.o.requires
-CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/main.f90.o.requires
+CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/task.f90.o.requires
 CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/tests.f90.o.requires
 
 .PHONY : CMakeFiles/task.dir/requires
