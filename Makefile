@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/konrad/Desktop/fortran/CMakeFiles /home/konrad/Desktop/fortran/CMakeFiles/progress.marks
@@ -123,6 +134,46 @@ task/fast:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/build
 .PHONY : task/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+src/fruit.o: src/fruit.f90.o
+
+.PHONY : src/fruit.o
+
+# target to build an object file
+src/fruit.f90.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.o
+.PHONY : src/fruit.f90.o
+
+src/fruit.i: src/fruit.f90.i
+
+.PHONY : src/fruit.i
+
+# target to preprocess a source file
+src/fruit.f90.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.i
+.PHONY : src/fruit.f90.i
+
+src/fruit.s: src/fruit.f90.s
+
+.PHONY : src/fruit.s
+
+# target to generate assembly for a file
+src/fruit.f90.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.s
+.PHONY : src/fruit.f90.s
+
 src/gauss.o: src/gauss.f90.o
 
 .PHONY : src/gauss.o
@@ -130,6 +181,7 @@ src/gauss.o: src/gauss.f90.o
 # target to build an object file
 src/gauss.f90.o:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.o
 .PHONY : src/gauss.f90.o
 
 src/gauss.i: src/gauss.f90.i
@@ -139,6 +191,7 @@ src/gauss.i: src/gauss.f90.i
 # target to preprocess a source file
 src/gauss.f90.i:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.i
 .PHONY : src/gauss.f90.i
 
 src/gauss.s: src/gauss.f90.s
@@ -148,6 +201,7 @@ src/gauss.s: src/gauss.f90.s
 # target to generate assembly for a file
 src/gauss.f90.s:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.s
 .PHONY : src/gauss.f90.s
 
 src/task.o: src/task.f90.o
@@ -183,7 +237,7 @@ src/tests.o: src/tests.f90.o
 
 # target to build an object file
 src/tests.f90.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/tests.f90.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.o
 .PHONY : src/tests.f90.o
 
 src/tests.i: src/tests.f90.i
@@ -192,7 +246,7 @@ src/tests.i: src/tests.f90.i
 
 # target to preprocess a source file
 src/tests.f90.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/tests.f90.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.i
 .PHONY : src/tests.f90.i
 
 src/tests.s: src/tests.f90.s
@@ -201,7 +255,7 @@ src/tests.s: src/tests.f90.s
 
 # target to generate assembly for a file
 src/tests.f90.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/tests.f90.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.s
 .PHONY : src/tests.f90.s
 
 # Help Target
@@ -211,8 +265,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... task"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... task"
+	@echo "... tests"
+	@echo "... src/fruit.o"
+	@echo "... src/fruit.i"
+	@echo "... src/fruit.s"
 	@echo "... src/gauss.o"
 	@echo "... src/gauss.i"
 	@echo "... src/gauss.s"

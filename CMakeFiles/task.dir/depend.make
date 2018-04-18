@@ -8,4 +8,5 @@ CMakeFiles/task.dir/src/gauss.f90.o.provides.build:
 	$(CMAKE_COMMAND) -E touch CMakeFiles/task.dir/src/gauss.f90.o.provides.build
 CMakeFiles/task.dir/build: CMakeFiles/task.dir/src/gauss.f90.o.provides.build
 
-
+CMakeFiles/task.dir/src/task.f90.o.requires: CMakeFiles/task.dir/gauss.mod.proxy
+CMakeFiles/task.dir/src/task.f90.o: CMakeFiles/task.dir/gauss.mod.stamp

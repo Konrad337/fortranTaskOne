@@ -1,0 +1,1 @@
+ifort    -O3  -pthread -funroll-all-loops -O3 -DNDEBUG -O3 CMakeFiles/tests.dir/src/tests.f90.o CMakeFiles/tests.dir/src/gauss.f90.o CMakeFiles/tests.dir/src/fruit.f90.o  -o bin/tests 

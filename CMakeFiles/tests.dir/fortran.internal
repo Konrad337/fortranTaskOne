@@ -1,0 +1,6 @@
+# The fortran modules provided by this target.
+provides
+ fruit
+ fruit_util
+ gauss
+ gauss_test

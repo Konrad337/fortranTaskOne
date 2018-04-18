@@ -6,13 +6,12 @@ module gauss
 
 contains
 
-
-subroutine gaussElimination(A, b, arrSize)
+subroutine gauss_elimination(A, b, arrSize, X)
 
     implicit none
     integer(kind=4), intent(IN)                          :: arrSize
     real(kind=8)                                         :: X(arrSize), C
-    real(kind=4),    intent(INOUT)                       :: A(arrSize, arrSize), b(arrSize)
+    real(kind=8),    intent(INOUT)                       :: A(arrSize, arrSize), b(arrSize)
     integer(kind=4)                                      :: i, j
 
 
