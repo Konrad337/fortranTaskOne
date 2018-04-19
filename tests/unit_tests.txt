@@ -1,0 +1,25 @@
+ 
+ Test module initialized
+ 
+    . : successful assert,   F : failed assert 
+ 
+FFF............................
+ 
+     Start of FRUIT summary: 
+ 
+ Some tests failed!
+ 
+   -- Failed assertion messages:
+   [_not_set_]:Expected [7.00000000000000], Got [1.00000000000000]
+   [_not_set_]:Expected [-3.60000000000000], Got [2.00000000000000]
+   [_not_set_]:Expected [7.00000000000000], Got [6.00000000000000]
+   -- end of failed assertion messages.
+ 
+ Total asserts :             31
+ Successful    :             28
+ Failed        :              3
+Successful rate:    90.32%
+ 
+ Successful asserts / total asserts : [           28 /          31  ]
+ Successful cases   / total cases   : [            0 /           0  ]
+   -- end of FRUIT summary

@@ -3,5 +3,7 @@
 
 CMakeFiles/task.dir/src/gauss.f90.o
  /home/konrad/Desktop/fortran/src/gauss.f90
+CMakeFiles/task.dir/src/matrice_ops.f90.o
+ /home/konrad/Desktop/fortran/src/matrice_ops.f90
 CMakeFiles/task.dir/src/task.f90.o
  /home/konrad/Desktop/fortran/src/task.f90

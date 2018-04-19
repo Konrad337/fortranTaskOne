@@ -8,5 +8,13 @@ CMakeFiles/task.dir/src/gauss.f90.o.provides.build:
 	$(CMAKE_COMMAND) -E touch CMakeFiles/task.dir/src/gauss.f90.o.provides.build
 CMakeFiles/task.dir/build: CMakeFiles/task.dir/src/gauss.f90.o.provides.build
 
+CMakeFiles/task.dir/matrice_ops.mod.proxy: CMakeFiles/task.dir/src/matrice_ops.f90.o.provides
+CMakeFiles/task.dir/src/matrice_ops.f90.o.provides.build:
+	$(CMAKE_COMMAND) -E cmake_copy_f90_mod matrice_ops CMakeFiles/task.dir/matrice_ops.mod.stamp GNU
+	$(CMAKE_COMMAND) -E touch CMakeFiles/task.dir/src/matrice_ops.f90.o.provides.build
+CMakeFiles/task.dir/build: CMakeFiles/task.dir/src/matrice_ops.f90.o.provides.build
+
 CMakeFiles/task.dir/src/task.f90.o.requires: CMakeFiles/task.dir/gauss.mod.proxy
 CMakeFiles/task.dir/src/task.f90.o: CMakeFiles/task.dir/gauss.mod.stamp
+CMakeFiles/task.dir/src/task.f90.o.requires: CMakeFiles/task.dir/matrice_ops.mod.proxy
+CMakeFiles/task.dir/src/task.f90.o: CMakeFiles/task.dir/matrice_ops.mod.stamp

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/tests.f90.o"
   "CMakeFiles/tests.dir/src/gauss.f90.o"
   "CMakeFiles/tests.dir/src/fruit.f90.o"
+  "CMakeFiles/tests.dir/src/matrice_ops.f90.o"
   "bin/tests.pdb"
   "bin/tests"
 )

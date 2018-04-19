@@ -15,4 +15,12 @@ FILE(REMOVE
   "gauss_test.mod"
   "GAUSS_TEST.mod"
   "CMakeFiles/tests.dir/gauss_test.mod.stamp"
+
+  "matrice_ops.mod"
+  "MATRICE_OPS.mod"
+  "CMakeFiles/tests.dir/matrice_ops.mod.stamp"
+
+  "matrice_ops_test.mod"
+  "MATRICE_OPS_TEST.mod"
+  "CMakeFiles/tests.dir/matrice_ops_test.mod.stamp"
   )

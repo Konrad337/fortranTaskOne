@@ -4,3 +4,5 @@ provides
  fruit_util
  gauss
  gauss_test
+ matrice_ops
+ matrice_ops_test

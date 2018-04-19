@@ -204,6 +204,36 @@ src/gauss.f90.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.s
 .PHONY : src/gauss.f90.s
 
+src/matrice_ops.o: src/matrice_ops.f90.o
+
+.PHONY : src/matrice_ops.o
+
+# target to build an object file
+src/matrice_ops.f90.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.o
+.PHONY : src/matrice_ops.f90.o
+
+src/matrice_ops.i: src/matrice_ops.f90.i
+
+.PHONY : src/matrice_ops.i
+
+# target to preprocess a source file
+src/matrice_ops.f90.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.i
+.PHONY : src/matrice_ops.f90.i
+
+src/matrice_ops.s: src/matrice_ops.f90.s
+
+.PHONY : src/matrice_ops.s
+
+# target to generate assembly for a file
+src/matrice_ops.f90.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.s
+.PHONY : src/matrice_ops.f90.s
+
 src/task.o: src/task.f90.o
 
 .PHONY : src/task.o
@@ -275,6 +305,9 @@ help:
 	@echo "... src/gauss.o"
 	@echo "... src/gauss.i"
 	@echo "... src/gauss.s"
+	@echo "... src/matrice_ops.o"
+	@echo "... src/matrice_ops.i"
+	@echo "... src/matrice_ops.s"
 	@echo "... src/task.o"
 	@echo "... src/task.i"
 	@echo "... src/task.s"

@@ -11,14 +11,16 @@ set(CMAKE_SOURCE_DIR ${CMAKE_SOURCE_DIR}/src)
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
-set(CMAKE_TEST_DIR ${CMAKE_SOURCE_DIR}/tests)
+set(CMAKE_TEST_DIR ${CMAKE_SOURCE_DIR}/../tests)
 set(TASK_SOURCES
     ${CMAKE_SOURCE_DIR}/task.f90
-    ${CMAKE_SOURCE_DIR}/gauss.f90)
+    ${CMAKE_SOURCE_DIR}/gauss.f90
+    ${CMAKE_SOURCE_DIR}/matrice_ops.f90)
 set(TEST_SOURCES
     ${CMAKE_SOURCE_DIR}/tests.f90
     ${CMAKE_SOURCE_DIR}/gauss.f90
-    ${CMAKE_SOURCE_DIR}/fruit.f90)
+    ${CMAKE_SOURCE_DIR}/fruit.f90
+    ${CMAKE_SOURCE_DIR}/matrice_ops.f90)
 
 
 
@@ -57,13 +59,27 @@ set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_RELEASE_FLAGS} ${realeaseopts}")
 add_executable(task ${TASK_SOURCES})
 add_executable(tests ${TEST_SOURCES})
 
-set(runSystemCommand "${CMAKE_BINARY_DIR}/tests")
+
 
 enable_testing()
-add_test(NAME testSystem COMMAND sh -c
-         "rm -f ${CMAKE_TEST_DIR}/systemResults.txt \
-          && ${runSystemCommand} \
-          >> ${CMAKE_TEST_DIR}/systemResults.txt")
+
+set(run_command "${CMAKE_BINARY_DIR}/tests")
+set(UNIT_TEST_NAME "unit_tests.txt")
+
+
+file(MAKE_DIRECTORY ${CMAKE_TEST_DIR})
+
+add_test( NAME unit_tests
+          COMMAND sh -c
+         "rm -f ${CMAKE_TEST_DIR}/${UNIT_TEST_NAME} \
+          && ${run_command} \
+          >> ${CMAKE_TEST_DIR}/${UNIT_TEST_NAME} \
+          && less ${CMAKE_TEST_DIR}/${UNIT_TEST_NAME}"
+          )
+
+
+
+
 
 
 

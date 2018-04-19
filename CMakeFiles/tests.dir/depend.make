@@ -16,12 +16,22 @@ CMakeFiles/tests.dir/src/gauss.f90.o.provides.build:
 	$(CMAKE_COMMAND) -E touch CMakeFiles/tests.dir/src/gauss.f90.o.provides.build
 CMakeFiles/tests.dir/build: CMakeFiles/tests.dir/src/gauss.f90.o.provides.build
 
+CMakeFiles/tests.dir/matrice_ops.mod.proxy: CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides
+CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides.build:
+	$(CMAKE_COMMAND) -E cmake_copy_f90_mod matrice_ops CMakeFiles/tests.dir/matrice_ops.mod.stamp GNU
+	$(CMAKE_COMMAND) -E touch CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides.build
+CMakeFiles/tests.dir/build: CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides.build
+
 CMakeFiles/tests.dir/src/tests.f90.o.requires: CMakeFiles/tests.dir/fruit.mod.proxy
 CMakeFiles/tests.dir/src/tests.f90.o: CMakeFiles/tests.dir/fruit.mod.stamp
 CMakeFiles/tests.dir/src/tests.f90.o.requires: CMakeFiles/tests.dir/gauss.mod.proxy
 CMakeFiles/tests.dir/src/tests.f90.o: CMakeFiles/tests.dir/gauss.mod.stamp
+CMakeFiles/tests.dir/src/tests.f90.o.requires: CMakeFiles/tests.dir/matrice_ops.mod.proxy
+CMakeFiles/tests.dir/src/tests.f90.o: CMakeFiles/tests.dir/matrice_ops.mod.stamp
 CMakeFiles/tests.dir/gauss_test.mod.proxy: CMakeFiles/tests.dir/src/tests.f90.o.provides
+CMakeFiles/tests.dir/matrice_ops_test.mod.proxy: CMakeFiles/tests.dir/src/tests.f90.o.provides
 CMakeFiles/tests.dir/src/tests.f90.o.provides.build:
 	$(CMAKE_COMMAND) -E cmake_copy_f90_mod gauss_test CMakeFiles/tests.dir/gauss_test.mod.stamp GNU
+	$(CMAKE_COMMAND) -E cmake_copy_f90_mod matrice_ops_test CMakeFiles/tests.dir/matrice_ops_test.mod.stamp GNU
 	$(CMAKE_COMMAND) -E touch CMakeFiles/tests.dir/src/tests.f90.o.provides.build
 CMakeFiles/tests.dir/build: CMakeFiles/tests.dir/src/tests.f90.o.provides.build
