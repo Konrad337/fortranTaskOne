@@ -12,6 +12,8 @@ set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_TEST_DIR ${CMAKE_SOURCE_DIR}/../tests)
+set(CMAKE_GRAPH_DIR ${CMAKE_SOURCE_DIR}/../graphs)
+
 set(TASK_SOURCES
     ${CMAKE_SOURCE_DIR}/task.f90
     ${CMAKE_SOURCE_DIR}/gauss.f90
@@ -23,8 +25,11 @@ set(TEST_SOURCES
     ${CMAKE_SOURCE_DIR}/matrice_ops.f90)
 
 
+file(MAKE_DIRECTORY ${CMAKE_TEST_DIR})
+file(MAKE_DIRECTORY ${CMAKE_GRAPH_DIR})
 
-include_directories("${PROJECT_SOURCE_DIR}/src")
+include_directories("${PROJECT_SOURCE_DIR}")
+include_directories("${CMAKE_GRAPH_DIR}")
 
 
 if(NOT CMAKE_BUILD_TYPE)
@@ -67,7 +72,15 @@ set(run_command "${CMAKE_BINARY_DIR}/tests")
 set(UNIT_TEST_NAME "unit_tests.txt")
 
 
-file(MAKE_DIRECTORY ${CMAKE_TEST_DIR})
+
+
+add_custom_target(check
+     COMMAND ${CMAKE_CTEST_COMMAND}
+     --force-new-ctest-process
+     --verbose
+     --output-on-failure
+      && sh -c "gnuplot ${CMAKE_GRAPH_DIR}/gnuplotscmds.gnu"
+)
 
 add_test( NAME unit_tests
           COMMAND sh -c

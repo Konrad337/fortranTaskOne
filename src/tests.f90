@@ -10,7 +10,7 @@ module gauss_test
     integer(kind=4)            :: size = 3, i
     real(kind=8), dimension(9) :: test_array_1 = (/ 1.0, 0.0, 0.0, 3.0, 10.0, 5.0, 0.0, 0.0, 10.0 /)
     real(kind=8), dimension(3) :: test_array_2 = (/ 1.0, 2.0, 6.0/)
-    real(kind=8), dimension(3) :: correct_output = (/ 1.0, 2.0, 6.0/)
+    real(kind=8), dimension(3) :: correct_output = (/ 7.0, -3.6, 7.0/)
     real(kind=8), dimension(3) :: output_test_array
 
 

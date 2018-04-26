@@ -9,8 +9,8 @@ contains
         implicit none
         integer(kind=4), intent(IN)                              :: size
         real(kind=8),    intent(IN)                              :: P1, P2, P3
-        real(kind=8),    intent(INOUT)                           :: matrice(size, size)
-        integer(kind=4)                                          :: i, j
+        real(kind=8),    intent(INOUT)                           :: matrice(size, size+1)
+        integer(kind=4)                                          :: i
 
         do i=2,size
             matrice(i-1, i) = P1
@@ -18,6 +18,7 @@ contains
             matrice(i, i-1) = P3
         end do
         matrice(1,1) = P2
+
 
 
 
