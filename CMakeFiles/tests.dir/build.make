@@ -57,116 +57,116 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/src/tests.f90.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/tests.f90.o: src/tests.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object CMakeFiles/tests.dir/src/tests.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/tests.f90 -o CMakeFiles/tests.dir/src/tests.f90.o
+CMakeFiles/tests.dir/src/tests.F90.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/tests.F90.o: src/tests.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object CMakeFiles/tests.dir/src/tests.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/tests.F90 -o CMakeFiles/tests.dir/src/tests.F90.o
 
-CMakeFiles/tests.dir/src/tests.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/tests.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/tests.f90 > CMakeFiles/tests.dir/src/tests.f90.i
+CMakeFiles/tests.dir/src/tests.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/tests.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/tests.F90 > CMakeFiles/tests.dir/src/tests.F90.i
 
-CMakeFiles/tests.dir/src/tests.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/tests.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/tests.f90 -o CMakeFiles/tests.dir/src/tests.f90.s
+CMakeFiles/tests.dir/src/tests.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/tests.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/tests.F90 -o CMakeFiles/tests.dir/src/tests.F90.s
 
-CMakeFiles/tests.dir/src/tests.f90.o.requires:
+CMakeFiles/tests.dir/src/tests.F90.o.requires:
 
-.PHONY : CMakeFiles/tests.dir/src/tests.f90.o.requires
+.PHONY : CMakeFiles/tests.dir/src/tests.F90.o.requires
 
-CMakeFiles/tests.dir/src/tests.f90.o.provides: CMakeFiles/tests.dir/src/tests.f90.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.o.provides.build
-.PHONY : CMakeFiles/tests.dir/src/tests.f90.o.provides
+CMakeFiles/tests.dir/src/tests.F90.o.provides: CMakeFiles/tests.dir/src/tests.F90.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.F90.o.provides.build
+.PHONY : CMakeFiles/tests.dir/src/tests.F90.o.provides
 
-CMakeFiles/tests.dir/src/tests.f90.o.provides.build: CMakeFiles/tests.dir/src/tests.f90.o
-
-
-CMakeFiles/tests.dir/src/gauss.f90.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/gauss.f90.o: src/gauss.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/tests.dir/src/gauss.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/gauss.f90 -o CMakeFiles/tests.dir/src/gauss.f90.o
-
-CMakeFiles/tests.dir/src/gauss.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/gauss.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/gauss.f90 > CMakeFiles/tests.dir/src/gauss.f90.i
-
-CMakeFiles/tests.dir/src/gauss.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/gauss.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/gauss.f90 -o CMakeFiles/tests.dir/src/gauss.f90.s
-
-CMakeFiles/tests.dir/src/gauss.f90.o.requires:
-
-.PHONY : CMakeFiles/tests.dir/src/gauss.f90.o.requires
-
-CMakeFiles/tests.dir/src/gauss.f90.o.provides: CMakeFiles/tests.dir/src/gauss.f90.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.o.provides.build
-.PHONY : CMakeFiles/tests.dir/src/gauss.f90.o.provides
-
-CMakeFiles/tests.dir/src/gauss.f90.o.provides.build: CMakeFiles/tests.dir/src/gauss.f90.o
+CMakeFiles/tests.dir/src/tests.F90.o.provides.build: CMakeFiles/tests.dir/src/tests.F90.o
 
 
-CMakeFiles/tests.dir/src/fruit.f90.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/fruit.f90.o: src/fruit.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object CMakeFiles/tests.dir/src/fruit.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/fruit.f90 -o CMakeFiles/tests.dir/src/fruit.f90.o
+CMakeFiles/tests.dir/src/gauss.F90.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/gauss.F90.o: src/gauss.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/tests.dir/src/gauss.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/gauss.F90 -o CMakeFiles/tests.dir/src/gauss.F90.o
 
-CMakeFiles/tests.dir/src/fruit.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/fruit.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/fruit.f90 > CMakeFiles/tests.dir/src/fruit.f90.i
+CMakeFiles/tests.dir/src/gauss.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/gauss.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/gauss.F90 > CMakeFiles/tests.dir/src/gauss.F90.i
 
-CMakeFiles/tests.dir/src/fruit.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/fruit.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/fruit.f90 -o CMakeFiles/tests.dir/src/fruit.f90.s
+CMakeFiles/tests.dir/src/gauss.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/gauss.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/gauss.F90 -o CMakeFiles/tests.dir/src/gauss.F90.s
 
-CMakeFiles/tests.dir/src/fruit.f90.o.requires:
+CMakeFiles/tests.dir/src/gauss.F90.o.requires:
 
-.PHONY : CMakeFiles/tests.dir/src/fruit.f90.o.requires
+.PHONY : CMakeFiles/tests.dir/src/gauss.F90.o.requires
 
-CMakeFiles/tests.dir/src/fruit.f90.o.provides: CMakeFiles/tests.dir/src/fruit.f90.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.o.provides.build
-.PHONY : CMakeFiles/tests.dir/src/fruit.f90.o.provides
+CMakeFiles/tests.dir/src/gauss.F90.o.provides: CMakeFiles/tests.dir/src/gauss.F90.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.F90.o.provides.build
+.PHONY : CMakeFiles/tests.dir/src/gauss.F90.o.provides
 
-CMakeFiles/tests.dir/src/fruit.f90.o.provides.build: CMakeFiles/tests.dir/src/fruit.f90.o
+CMakeFiles/tests.dir/src/gauss.F90.o.provides.build: CMakeFiles/tests.dir/src/gauss.F90.o
 
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/matrice_ops.f90.o: src/matrice_ops.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object CMakeFiles/tests.dir/src/matrice_ops.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/matrice_ops.f90 -o CMakeFiles/tests.dir/src/matrice_ops.f90.o
+CMakeFiles/tests.dir/src/fruit.F90.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/fruit.F90.o: src/fruit.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object CMakeFiles/tests.dir/src/fruit.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/fruit.F90 -o CMakeFiles/tests.dir/src/fruit.F90.o
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/matrice_ops.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/matrice_ops.f90 > CMakeFiles/tests.dir/src/matrice_ops.f90.i
+CMakeFiles/tests.dir/src/fruit.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/fruit.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/fruit.F90 > CMakeFiles/tests.dir/src/fruit.F90.i
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/matrice_ops.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/matrice_ops.f90 -o CMakeFiles/tests.dir/src/matrice_ops.f90.s
+CMakeFiles/tests.dir/src/fruit.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/fruit.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/fruit.F90 -o CMakeFiles/tests.dir/src/fruit.F90.s
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.o.requires:
+CMakeFiles/tests.dir/src/fruit.F90.o.requires:
 
-.PHONY : CMakeFiles/tests.dir/src/matrice_ops.f90.o.requires
+.PHONY : CMakeFiles/tests.dir/src/fruit.F90.o.requires
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides: CMakeFiles/tests.dir/src/matrice_ops.f90.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides.build
-.PHONY : CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides
+CMakeFiles/tests.dir/src/fruit.F90.o.provides: CMakeFiles/tests.dir/src/fruit.F90.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.F90.o.provides.build
+.PHONY : CMakeFiles/tests.dir/src/fruit.F90.o.provides
 
-CMakeFiles/tests.dir/src/matrice_ops.f90.o.provides.build: CMakeFiles/tests.dir/src/matrice_ops.f90.o
+CMakeFiles/tests.dir/src/fruit.F90.o.provides.build: CMakeFiles/tests.dir/src/fruit.F90.o
+
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/matrice_ops.F90.o: src/matrice_ops.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object CMakeFiles/tests.dir/src/matrice_ops.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/matrice_ops.F90 -o CMakeFiles/tests.dir/src/matrice_ops.F90.o
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/tests.dir/src/matrice_ops.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/matrice_ops.F90 > CMakeFiles/tests.dir/src/matrice_ops.F90.i
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/tests.dir/src/matrice_ops.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/matrice_ops.F90 -o CMakeFiles/tests.dir/src/matrice_ops.F90.s
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.o.requires:
+
+.PHONY : CMakeFiles/tests.dir/src/matrice_ops.F90.o.requires
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.o.provides: CMakeFiles/tests.dir/src/matrice_ops.F90.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.F90.o.provides.build
+.PHONY : CMakeFiles/tests.dir/src/matrice_ops.F90.o.provides
+
+CMakeFiles/tests.dir/src/matrice_ops.F90.o.provides.build: CMakeFiles/tests.dir/src/matrice_ops.F90.o
 
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/src/tests.f90.o" \
-"CMakeFiles/tests.dir/src/gauss.f90.o" \
-"CMakeFiles/tests.dir/src/fruit.f90.o" \
-"CMakeFiles/tests.dir/src/matrice_ops.f90.o"
+"CMakeFiles/tests.dir/src/tests.F90.o" \
+"CMakeFiles/tests.dir/src/gauss.F90.o" \
+"CMakeFiles/tests.dir/src/fruit.F90.o" \
+"CMakeFiles/tests.dir/src/matrice_ops.F90.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-bin/tests: CMakeFiles/tests.dir/src/tests.f90.o
-bin/tests: CMakeFiles/tests.dir/src/gauss.f90.o
-bin/tests: CMakeFiles/tests.dir/src/fruit.f90.o
-bin/tests: CMakeFiles/tests.dir/src/matrice_ops.f90.o
+bin/tests: CMakeFiles/tests.dir/src/tests.F90.o
+bin/tests: CMakeFiles/tests.dir/src/gauss.F90.o
+bin/tests: CMakeFiles/tests.dir/src/fruit.F90.o
+bin/tests: CMakeFiles/tests.dir/src/matrice_ops.F90.o
 bin/tests: CMakeFiles/tests.dir/build.make
 bin/tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking Fortran executable bin/tests"
@@ -177,10 +177,10 @@ CMakeFiles/tests.dir/build: bin/tests
 
 .PHONY : CMakeFiles/tests.dir/build
 
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/tests.f90.o.requires
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/gauss.f90.o.requires
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/fruit.f90.o.requires
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/matrice_ops.f90.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/tests.F90.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/gauss.F90.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/fruit.F90.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/src/matrice_ops.F90.o.requires
 
 .PHONY : CMakeFiles/tests.dir/requires
 

@@ -57,90 +57,90 @@ include CMakeFiles/task.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/task.dir/flags.make
 
-CMakeFiles/task.dir/src/task.f90.o: CMakeFiles/task.dir/flags.make
-CMakeFiles/task.dir/src/task.f90.o: src/task.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object CMakeFiles/task.dir/src/task.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/task.f90 -o CMakeFiles/task.dir/src/task.f90.o
+CMakeFiles/task.dir/src/task.F90.o: CMakeFiles/task.dir/flags.make
+CMakeFiles/task.dir/src/task.F90.o: src/task.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object CMakeFiles/task.dir/src/task.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/task.F90 -o CMakeFiles/task.dir/src/task.F90.o
 
-CMakeFiles/task.dir/src/task.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/task.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/task.f90 > CMakeFiles/task.dir/src/task.f90.i
+CMakeFiles/task.dir/src/task.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/task.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/task.F90 > CMakeFiles/task.dir/src/task.F90.i
 
-CMakeFiles/task.dir/src/task.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/task.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/task.f90 -o CMakeFiles/task.dir/src/task.f90.s
+CMakeFiles/task.dir/src/task.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/task.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/task.F90 -o CMakeFiles/task.dir/src/task.F90.s
 
-CMakeFiles/task.dir/src/task.f90.o.requires:
+CMakeFiles/task.dir/src/task.F90.o.requires:
 
-.PHONY : CMakeFiles/task.dir/src/task.f90.o.requires
+.PHONY : CMakeFiles/task.dir/src/task.F90.o.requires
 
-CMakeFiles/task.dir/src/task.f90.o.provides: CMakeFiles/task.dir/src/task.f90.o.requires
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.o.provides.build
-.PHONY : CMakeFiles/task.dir/src/task.f90.o.provides
+CMakeFiles/task.dir/src/task.F90.o.provides: CMakeFiles/task.dir/src/task.F90.o.requires
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.F90.o.provides.build
+.PHONY : CMakeFiles/task.dir/src/task.F90.o.provides
 
-CMakeFiles/task.dir/src/task.f90.o.provides.build: CMakeFiles/task.dir/src/task.f90.o
-
-
-CMakeFiles/task.dir/src/gauss.f90.o: CMakeFiles/task.dir/flags.make
-CMakeFiles/task.dir/src/gauss.f90.o: src/gauss.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/task.dir/src/gauss.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/gauss.f90 -o CMakeFiles/task.dir/src/gauss.f90.o
-
-CMakeFiles/task.dir/src/gauss.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/gauss.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/gauss.f90 > CMakeFiles/task.dir/src/gauss.f90.i
-
-CMakeFiles/task.dir/src/gauss.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/gauss.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/gauss.f90 -o CMakeFiles/task.dir/src/gauss.f90.s
-
-CMakeFiles/task.dir/src/gauss.f90.o.requires:
-
-.PHONY : CMakeFiles/task.dir/src/gauss.f90.o.requires
-
-CMakeFiles/task.dir/src/gauss.f90.o.provides: CMakeFiles/task.dir/src/gauss.f90.o.requires
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.o.provides.build
-.PHONY : CMakeFiles/task.dir/src/gauss.f90.o.provides
-
-CMakeFiles/task.dir/src/gauss.f90.o.provides.build: CMakeFiles/task.dir/src/gauss.f90.o
+CMakeFiles/task.dir/src/task.F90.o.provides.build: CMakeFiles/task.dir/src/task.F90.o
 
 
-CMakeFiles/task.dir/src/matrice_ops.f90.o: CMakeFiles/task.dir/flags.make
-CMakeFiles/task.dir/src/matrice_ops.f90.o: src/matrice_ops.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object CMakeFiles/task.dir/src/matrice_ops.f90.o"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/matrice_ops.f90 -o CMakeFiles/task.dir/src/matrice_ops.f90.o
+CMakeFiles/task.dir/src/gauss.F90.o: CMakeFiles/task.dir/flags.make
+CMakeFiles/task.dir/src/gauss.F90.o: src/gauss.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object CMakeFiles/task.dir/src/gauss.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/gauss.F90 -o CMakeFiles/task.dir/src/gauss.F90.o
 
-CMakeFiles/task.dir/src/matrice_ops.f90.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/matrice_ops.f90.i"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/matrice_ops.f90 > CMakeFiles/task.dir/src/matrice_ops.f90.i
+CMakeFiles/task.dir/src/gauss.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/gauss.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/gauss.F90 > CMakeFiles/task.dir/src/gauss.F90.i
 
-CMakeFiles/task.dir/src/matrice_ops.f90.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/matrice_ops.f90.s"
-	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/matrice_ops.f90 -o CMakeFiles/task.dir/src/matrice_ops.f90.s
+CMakeFiles/task.dir/src/gauss.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/gauss.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/gauss.F90 -o CMakeFiles/task.dir/src/gauss.F90.s
 
-CMakeFiles/task.dir/src/matrice_ops.f90.o.requires:
+CMakeFiles/task.dir/src/gauss.F90.o.requires:
 
-.PHONY : CMakeFiles/task.dir/src/matrice_ops.f90.o.requires
+.PHONY : CMakeFiles/task.dir/src/gauss.F90.o.requires
 
-CMakeFiles/task.dir/src/matrice_ops.f90.o.provides: CMakeFiles/task.dir/src/matrice_ops.f90.o.requires
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.o.provides.build
-.PHONY : CMakeFiles/task.dir/src/matrice_ops.f90.o.provides
+CMakeFiles/task.dir/src/gauss.F90.o.provides: CMakeFiles/task.dir/src/gauss.F90.o.requires
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.F90.o.provides.build
+.PHONY : CMakeFiles/task.dir/src/gauss.F90.o.provides
 
-CMakeFiles/task.dir/src/matrice_ops.f90.o.provides.build: CMakeFiles/task.dir/src/matrice_ops.f90.o
+CMakeFiles/task.dir/src/gauss.F90.o.provides.build: CMakeFiles/task.dir/src/gauss.F90.o
+
+
+CMakeFiles/task.dir/src/matrice_ops.F90.o: CMakeFiles/task.dir/flags.make
+CMakeFiles/task.dir/src/matrice_ops.F90.o: src/matrice_ops.F90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object CMakeFiles/task.dir/src/matrice_ops.F90.o"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/konrad/Desktop/fortran/src/matrice_ops.F90 -o CMakeFiles/task.dir/src/matrice_ops.F90.o
+
+CMakeFiles/task.dir/src/matrice_ops.F90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/task.dir/src/matrice_ops.F90.i"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/konrad/Desktop/fortran/src/matrice_ops.F90 > CMakeFiles/task.dir/src/matrice_ops.F90.i
+
+CMakeFiles/task.dir/src/matrice_ops.F90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/task.dir/src/matrice_ops.F90.s"
+	ifort $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/konrad/Desktop/fortran/src/matrice_ops.F90 -o CMakeFiles/task.dir/src/matrice_ops.F90.s
+
+CMakeFiles/task.dir/src/matrice_ops.F90.o.requires:
+
+.PHONY : CMakeFiles/task.dir/src/matrice_ops.F90.o.requires
+
+CMakeFiles/task.dir/src/matrice_ops.F90.o.provides: CMakeFiles/task.dir/src/matrice_ops.F90.o.requires
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.F90.o.provides.build
+.PHONY : CMakeFiles/task.dir/src/matrice_ops.F90.o.provides
+
+CMakeFiles/task.dir/src/matrice_ops.F90.o.provides.build: CMakeFiles/task.dir/src/matrice_ops.F90.o
 
 
 # Object files for target task
 task_OBJECTS = \
-"CMakeFiles/task.dir/src/task.f90.o" \
-"CMakeFiles/task.dir/src/gauss.f90.o" \
-"CMakeFiles/task.dir/src/matrice_ops.f90.o"
+"CMakeFiles/task.dir/src/task.F90.o" \
+"CMakeFiles/task.dir/src/gauss.F90.o" \
+"CMakeFiles/task.dir/src/matrice_ops.F90.o"
 
 # External object files for target task
 task_EXTERNAL_OBJECTS =
 
-bin/task: CMakeFiles/task.dir/src/task.f90.o
-bin/task: CMakeFiles/task.dir/src/gauss.f90.o
-bin/task: CMakeFiles/task.dir/src/matrice_ops.f90.o
+bin/task: CMakeFiles/task.dir/src/task.F90.o
+bin/task: CMakeFiles/task.dir/src/gauss.F90.o
+bin/task: CMakeFiles/task.dir/src/matrice_ops.F90.o
 bin/task: CMakeFiles/task.dir/build.make
 bin/task: CMakeFiles/task.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/konrad/Desktop/fortran/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking Fortran executable bin/task"
@@ -151,9 +151,9 @@ CMakeFiles/task.dir/build: bin/task
 
 .PHONY : CMakeFiles/task.dir/build
 
-CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/task.f90.o.requires
-CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/gauss.f90.o.requires
-CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/matrice_ops.f90.o.requires
+CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/task.F90.o.requires
+CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/gauss.F90.o.requires
+CMakeFiles/task.dir/requires: CMakeFiles/task.dir/src/matrice_ops.F90.o.requires
 
 .PHONY : CMakeFiles/task.dir/requires
 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_Fortran
-  "/home/konrad/Desktop/fortran/src/gauss.f90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/gauss.f90.o"
-  "/home/konrad/Desktop/fortran/src/matrice_ops.f90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/matrice_ops.f90.o"
-  "/home/konrad/Desktop/fortran/src/task.f90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/task.f90.o"
+  "/home/konrad/Desktop/fortran/src/gauss.F90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/gauss.F90.o"
+  "/home/konrad/Desktop/fortran/src/matrice_ops.F90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/matrice_ops.F90.o"
+  "/home/konrad/Desktop/fortran/src/task.F90" "/home/konrad/Desktop/fortran/CMakeFiles/task.dir/src/task.F90.o"
   )
 set(CMAKE_Fortran_COMPILER_ID "GNU")
 

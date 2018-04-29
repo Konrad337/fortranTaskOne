@@ -122,19 +122,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named check
-
-# Build rule for target.
-check: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check
-.PHONY : check
-
-# fast build rule for target.
-check/fast:
-	$(MAKE) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
-.PHONY : check/fast
-
-#=============================================================================
 # Target rules for targets named task
 
 # Build rule for target.
@@ -160,146 +147,203 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-src/fruit.o: src/fruit.f90.o
+#=============================================================================
+# Target rules for targets named check
+
+# Build rule for target.
+check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check
+.PHONY : check
+
+# fast build rule for target.
+check/fast:
+	$(MAKE) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
+.PHONY : check/fast
+
+#=============================================================================
+# Target rules for targets named task4
+
+# Build rule for target.
+task4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task4
+.PHONY : task4
+
+# fast build rule for target.
+task4/fast:
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/build
+.PHONY : task4/fast
+
+#=============================================================================
+# Target rules for targets named task16
+
+# Build rule for target.
+task16: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task16
+.PHONY : task16
+
+# fast build rule for target.
+task16/fast:
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/build
+.PHONY : task16/fast
+
+src/fruit.o: src/fruit.F90.o
 
 .PHONY : src/fruit.o
 
 # target to build an object file
-src/fruit.f90.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.o
-.PHONY : src/fruit.f90.o
+src/fruit.F90.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.F90.o
+.PHONY : src/fruit.F90.o
 
-src/fruit.i: src/fruit.f90.i
+src/fruit.i: src/fruit.F90.i
 
 .PHONY : src/fruit.i
 
 # target to preprocess a source file
-src/fruit.f90.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.i
-.PHONY : src/fruit.f90.i
+src/fruit.F90.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.F90.i
+.PHONY : src/fruit.F90.i
 
-src/fruit.s: src/fruit.f90.s
+src/fruit.s: src/fruit.F90.s
 
 .PHONY : src/fruit.s
 
 # target to generate assembly for a file
-src/fruit.f90.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.f90.s
-.PHONY : src/fruit.f90.s
+src/fruit.F90.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/fruit.F90.s
+.PHONY : src/fruit.F90.s
 
-src/gauss.o: src/gauss.f90.o
+src/gauss.o: src/gauss.F90.o
 
 .PHONY : src/gauss.o
 
 # target to build an object file
-src/gauss.f90.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.o
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.o
-.PHONY : src/gauss.f90.o
+src/gauss.F90.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.F90.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.F90.o
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/gauss.F90.o
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/gauss.F90.o
+.PHONY : src/gauss.F90.o
 
-src/gauss.i: src/gauss.f90.i
+src/gauss.i: src/gauss.F90.i
 
 .PHONY : src/gauss.i
 
 # target to preprocess a source file
-src/gauss.f90.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.i
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.i
-.PHONY : src/gauss.f90.i
+src/gauss.F90.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.F90.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.F90.i
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/gauss.F90.i
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/gauss.F90.i
+.PHONY : src/gauss.F90.i
 
-src/gauss.s: src/gauss.f90.s
+src/gauss.s: src/gauss.F90.s
 
 .PHONY : src/gauss.s
 
 # target to generate assembly for a file
-src/gauss.f90.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.f90.s
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.f90.s
-.PHONY : src/gauss.f90.s
+src/gauss.F90.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/gauss.F90.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/gauss.F90.s
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/gauss.F90.s
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/gauss.F90.s
+.PHONY : src/gauss.F90.s
 
-src/matrice_ops.o: src/matrice_ops.f90.o
+src/matrice_ops.o: src/matrice_ops.F90.o
 
 .PHONY : src/matrice_ops.o
 
 # target to build an object file
-src/matrice_ops.f90.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.o
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.o
-.PHONY : src/matrice_ops.f90.o
+src/matrice_ops.F90.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.F90.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.F90.o
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/matrice_ops.F90.o
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/matrice_ops.F90.o
+.PHONY : src/matrice_ops.F90.o
 
-src/matrice_ops.i: src/matrice_ops.f90.i
+src/matrice_ops.i: src/matrice_ops.F90.i
 
 .PHONY : src/matrice_ops.i
 
 # target to preprocess a source file
-src/matrice_ops.f90.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.i
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.i
-.PHONY : src/matrice_ops.f90.i
+src/matrice_ops.F90.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.F90.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.F90.i
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/matrice_ops.F90.i
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/matrice_ops.F90.i
+.PHONY : src/matrice_ops.F90.i
 
-src/matrice_ops.s: src/matrice_ops.f90.s
+src/matrice_ops.s: src/matrice_ops.F90.s
 
 .PHONY : src/matrice_ops.s
 
 # target to generate assembly for a file
-src/matrice_ops.f90.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.f90.s
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.f90.s
-.PHONY : src/matrice_ops.f90.s
+src/matrice_ops.F90.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/matrice_ops.F90.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/matrice_ops.F90.s
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/matrice_ops.F90.s
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/matrice_ops.F90.s
+.PHONY : src/matrice_ops.F90.s
 
-src/task.o: src/task.f90.o
+src/task.o: src/task.F90.o
 
 .PHONY : src/task.o
 
 # target to build an object file
-src/task.f90.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.o
-.PHONY : src/task.f90.o
+src/task.F90.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.F90.o
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/task.F90.o
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/task.F90.o
+.PHONY : src/task.F90.o
 
-src/task.i: src/task.f90.i
+src/task.i: src/task.F90.i
 
 .PHONY : src/task.i
 
 # target to preprocess a source file
-src/task.f90.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.i
-.PHONY : src/task.f90.i
+src/task.F90.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.F90.i
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/task.F90.i
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/task.F90.i
+.PHONY : src/task.F90.i
 
-src/task.s: src/task.f90.s
+src/task.s: src/task.F90.s
 
 .PHONY : src/task.s
 
 # target to generate assembly for a file
-src/task.f90.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.f90.s
-.PHONY : src/task.f90.s
+src/task.F90.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/task.F90.s
+	$(MAKE) -f CMakeFiles/task4.dir/build.make CMakeFiles/task4.dir/src/task.F90.s
+	$(MAKE) -f CMakeFiles/task16.dir/build.make CMakeFiles/task16.dir/src/task.F90.s
+.PHONY : src/task.F90.s
 
-src/tests.o: src/tests.f90.o
+src/tests.o: src/tests.F90.o
 
 .PHONY : src/tests.o
 
 # target to build an object file
-src/tests.f90.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.o
-.PHONY : src/tests.f90.o
+src/tests.F90.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.F90.o
+.PHONY : src/tests.F90.o
 
-src/tests.i: src/tests.f90.i
+src/tests.i: src/tests.F90.i
 
 .PHONY : src/tests.i
 
 # target to preprocess a source file
-src/tests.f90.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.i
-.PHONY : src/tests.f90.i
+src/tests.F90.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.F90.i
+.PHONY : src/tests.F90.i
 
-src/tests.s: src/tests.f90.s
+src/tests.s: src/tests.F90.s
 
 .PHONY : src/tests.s
 
 # target to generate assembly for a file
-src/tests.f90.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.f90.s
-.PHONY : src/tests.f90.s
+src/tests.F90.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.F90.s
+.PHONY : src/tests.F90.s
 
 # Help Target
 help:
@@ -309,10 +353,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... check"
 	@echo "... task"
 	@echo "... tests"
+	@echo "... check"
+	@echo "... task4"
+	@echo "... task16"
+	@echo "... test"
 	@echo "... src/fruit.o"
 	@echo "... src/fruit.i"
 	@echo "... src/fruit.s"

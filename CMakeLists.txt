@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.5)
 project (lab_project_1)
-file(GLOB SOURCES "./src/*.f90")
+file(GLOB SOURCES "./src/*.F90")
 enable_language (Fortran)
 
 set (CMAKE_Fortran_COMPILER ifort)
@@ -15,14 +15,14 @@ set(CMAKE_TEST_DIR ${CMAKE_SOURCE_DIR}/../tests)
 set(CMAKE_GRAPH_DIR ${CMAKE_SOURCE_DIR}/../graphs)
 
 set(TASK_SOURCES
-    ${CMAKE_SOURCE_DIR}/task.f90
-    ${CMAKE_SOURCE_DIR}/gauss.f90
-    ${CMAKE_SOURCE_DIR}/matrice_ops.f90)
+    ${CMAKE_SOURCE_DIR}/task.F90
+    ${CMAKE_SOURCE_DIR}/gauss.F90
+${CMAKE_SOURCE_DIR}/matrice_ops.F90)
 set(TEST_SOURCES
-    ${CMAKE_SOURCE_DIR}/tests.f90
-    ${CMAKE_SOURCE_DIR}/gauss.f90
-    ${CMAKE_SOURCE_DIR}/fruit.f90
-    ${CMAKE_SOURCE_DIR}/matrice_ops.f90)
+    ${CMAKE_SOURCE_DIR}/tests.F90
+    ${CMAKE_SOURCE_DIR}/gauss.F90
+    ${CMAKE_SOURCE_DIR}/fruit.F90
+${CMAKE_SOURCE_DIR}/matrice_ops.F90)
 
 
 file(MAKE_DIRECTORY ${CMAKE_TEST_DIR})
@@ -42,13 +42,13 @@ endif()
 get_filename_component (Fortran_COMPILER_NAME ${CMAKE_Fortran_COMPILER} NAME)
 
 if(CMAKE_Fortran_COMPILER_ID MATCHES "GNU")
-    set(dialect "-ffree-form -std=f2008 -fimplicit-none -fpp -Wall -pedantic")
+    set(dialect "-ffree-form -std=f2008 -fimplicit-none -cpp -Wall -pedantic")
     set(bounds "-fbounds-check")
     set(realeaseopts "-O3  -pthread -funroll-all-loops")
     set(debugopts "-O0 -g3 -fbacktrace -fcheck=all -fdump-fortran-optimized")
 #    -DIINFO -DIDEBUG -DIPRINT")
 elseif(CMAKE_Fortran_COMPILER_ID MATCHES "Intel")
-    set(dialect "-std08  -module . -implicitnone -fpp -Wall -pedantic")
+    set(dialect "-std08  -module . -implicitnone -cpp -Wall -pedantic")
     set(bounds " -check bounds")
     set(realeaseopts "-funroll-all-loops -O3")
     set(debugopts "-O0 -g -traceback -check all -debug extended -debug-parameters all")
@@ -62,8 +62,15 @@ set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_RELEASE_FLAGS} ${realeaseopts}")
 
 
 add_executable(task ${TASK_SOURCES})
-add_executable(tests ${TEST_SOURCES})
+add_executable(task4 ${TASK_SOURCES})
+add_executable(task16 ${TASK_SOURCES})
+set_target_properties(task PROPERTIES COMPILE_FLAGS "-D\"_KIND=8\"")
+set_target_properties(task4 PROPERTIES COMPILE_FLAGS "-D\"_KIND=4\"")
+set_target_properties(task16 PROPERTIES COMPILE_FLAGS "-D\"_KIND=16\"")
 
+
+
+add_executable(tests ${TEST_SOURCES})
 
 
 enable_testing()

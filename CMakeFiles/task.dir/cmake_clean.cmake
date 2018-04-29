@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/task.dir/src/task.f90.o"
-  "CMakeFiles/task.dir/src/gauss.f90.o"
-  "CMakeFiles/task.dir/src/matrice_ops.f90.o"
+  "CMakeFiles/task.dir/src/task.F90.o"
+  "CMakeFiles/task.dir/src/gauss.F90.o"
+  "CMakeFiles/task.dir/src/matrice_ops.F90.o"
   "bin/task.pdb"
   "bin/task"
 )

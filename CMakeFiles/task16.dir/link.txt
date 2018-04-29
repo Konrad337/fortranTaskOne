@@ -1,0 +1,1 @@
+ifort    -O3  -pthread -funroll-all-loops -O3 -DNDEBUG -O3 CMakeFiles/task16.dir/src/task.F90.o CMakeFiles/task16.dir/src/gauss.F90.o CMakeFiles/task16.dir/src/matrice_ops.F90.o  -o bin/task16 

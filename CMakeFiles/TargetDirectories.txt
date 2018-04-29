@@ -1,6 +1,8 @@
 /home/konrad/Desktop/fortran/CMakeFiles/rebuild_cache.dir
 /home/konrad/Desktop/fortran/CMakeFiles/edit_cache.dir
-/home/konrad/Desktop/fortran/CMakeFiles/test.dir
-/home/konrad/Desktop/fortran/CMakeFiles/check.dir
 /home/konrad/Desktop/fortran/CMakeFiles/task.dir
 /home/konrad/Desktop/fortran/CMakeFiles/tests.dir
+/home/konrad/Desktop/fortran/CMakeFiles/check.dir
+/home/konrad/Desktop/fortran/CMakeFiles/task4.dir
+/home/konrad/Desktop/fortran/CMakeFiles/task16.dir
+/home/konrad/Desktop/fortran/CMakeFiles/test.dir

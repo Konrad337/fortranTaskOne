@@ -1,10 +1,10 @@
-Start testing: Apr 26 12:29 CEST
+Start testing: Apr 29 18:33 CEST
 ----------------------------------------------------------
 1/1 Testing: unit_tests
 1/1 Test: unit_tests
 Command: "/usr/bin/sh" "-c" "rm -f /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt           && /home/konrad/Desktop/fortran/src/../bin/tests           >> /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt           && less /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt"
 Directory: /home/konrad/Desktop/fortran
-"unit_tests" start time: Apr 26 12:29 CEST
+"unit_tests" start time: Apr 29 18:33 CEST
 Output:
 ----------------------------------------------------------
  
@@ -12,30 +12,32 @@ Output:
  
     . : successful assert,   F : failed assert 
  
-.F.............................
+FFF............................
  
      Start of FRUIT summary: 
  
  Some tests failed!
  
    -- Failed assertion messages:
-   [_not_set_]:Expected [-3.60000000000000], Got [-3.59999990463257]
+   [_not_set_]:Expected [0.000000000000000E+000], Got [7.00000000000000]
+   [_not_set_]:Expected [0.000000000000000E+000], Got [-3.59999990463257]
+   [_not_set_]:Expected [0.000000000000000E+000], Got [7.00000000000000]
    -- end of failed assertion messages.
  
  Total asserts :             31
- Successful    :             30
- Failed        :              1
-Successful rate:    96.77%
+ Successful    :             28
+ Failed        :              3
+Successful rate:    90.32%
  
- Successful asserts / total asserts : [           30 /          31  ]
+ Successful asserts / total asserts : [           28 /          31  ]
  Successful cases   / total cases   : [            0 /           0  ]
    -- end of FRUIT summary
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"unit_tests" end time: Apr 26 12:29 CEST
+"unit_tests" end time: Apr 29 18:33 CEST
 "unit_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 26 12:29 CEST
+End testing: Apr 29 18:33 CEST
