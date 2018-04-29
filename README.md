@@ -11,11 +11,11 @@
  write them down in tests/unit_tests.txt, if you already run
  ./bin/task, ./bin/task4, ./bin/task16 it will also update graphs in ./graphs
 
- ![Grapph of errors with diffrent kinds:][logo]
- [logo]: https://github.com/Konrad337/fortranTaskOne/blob/master/graphs/errors.png
+ ![Grapph of errors with diffrent kinds:][1]
+ [1]: https://github.com/Konrad337/fortranTaskOne/blob/master/graphs/errors.png
 
 
 
 
- ![Grapph of results:][logo]
- [logo]: https://github.com/Konrad337/fortranTaskOne/blob/master/graphs/data6.png
+ ![Grapph of results:][2]
+ [2]: https://github.com/Konrad337/fortranTaskOne/blob/master/graphs/data6.png
