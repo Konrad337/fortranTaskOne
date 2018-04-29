@@ -25,4 +25,4 @@ set style line 1 lc rgb '#0060ad' pt 27 ps 0.8   # --- blue
 set terminal png size 1200,1200; set output './graphs/data2.png'; plot './graphs/data_o2' title 'Expected' with lines ls 2, './graphs/data_c_o2' title 'MRS' with points ls 1
 
 set style line 1 lc rgb '#0060ad' pt 27 ps 0.3   # --- blue
-set terminal png size 1400,1400; set output './graphs/data3.png'; plot './graphs/data_o3' title 'Expected' with lines ls 2, './graphs/data_c_o3' title 'MRS' with points ls 1
+set terminal png size 1800,1800; set output './graphs/data3.png'; plot './graphs/data_o3' title 'Expected' with lines ls 2, './graphs/data_c_o3' title 'MRS' with points ls 1

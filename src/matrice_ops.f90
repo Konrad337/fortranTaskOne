@@ -18,6 +18,7 @@ contains
             matrice(i, i-1) = P3
         end do
         matrice(1,1) = P2
+        
 
 
 

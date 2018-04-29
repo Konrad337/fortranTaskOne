@@ -1,10 +1,10 @@
-Start testing: Apr 26 12:24 CEST
+Start testing: Apr 26 12:29 CEST
 ----------------------------------------------------------
 1/1 Testing: unit_tests
 1/1 Test: unit_tests
 Command: "/usr/bin/sh" "-c" "rm -f /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt           && /home/konrad/Desktop/fortran/src/../bin/tests           >> /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt           && less /home/konrad/Desktop/fortran/src/../tests/unit_tests.txt"
 Directory: /home/konrad/Desktop/fortran
-"unit_tests" start time: Apr 26 12:24 CEST
+"unit_tests" start time: Apr 26 12:29 CEST
 Output:
 ----------------------------------------------------------
  
@@ -34,8 +34,8 @@ Successful rate:    96.77%
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"unit_tests" end time: Apr 26 12:24 CEST
+"unit_tests" end time: Apr 26 12:29 CEST
 "unit_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 26 12:24 CEST
+End testing: Apr 26 12:29 CEST
