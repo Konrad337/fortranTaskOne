@@ -16,5 +16,6 @@
 
 
 
+
  ![Grapph of results:][logo]
  [logo]: https://github.com/Konrad337/fortranTaskOne/blob/master/graphs/data6.png
